@@ -5,8 +5,6 @@ const Reviews = () => {
                 <p className='text-base inline-flex tracking-widest uppercase text-[#418797]'>
                     Reviews
                 </p>
-
-                
                 <p className='text-base px-5 inline-flex'>
                     From our customers!
                 </p>

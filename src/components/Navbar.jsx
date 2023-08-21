@@ -19,10 +19,10 @@ const Navbar = () => {
         <div className='fixed w-full h-24 shadow-xl z-[100]'>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Image
-                    src='/assets/navLogo.png'
+                    src='/assets/glfLogo.png'
                     alt=''
-                    width='200'
-                    height='300'
+                    width='151'
+                    height='63'
                 />
                 <div>
                     <ul className='hidden md:flex pt-10'>
@@ -97,8 +97,8 @@ const Navbar = () => {
                         </div>
                         <div className='border-b border-gray-300 my-2'>
                             <p className='w-[85%] md:w-[90%] py-1 text-lg'>
-                                <div className='font-medium'>GLF</div> Siding -
-                                Windows - Doors
+                                <span className='font-medium'>GLF</span> Siding
+                                - Windows - Doors
                             </p>
                         </div>
                     </div>
