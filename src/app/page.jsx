@@ -2,20 +2,19 @@ import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import ContactPage from "../components/Contact";
-import Skills from "../components/Skills";
+import Skills from "../components/Services";
 import ProjectsPage from "../components/Projects";
 import Reviews from "../components/Reviews";
 
 export default function Home() {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-between p-2 bg-slate-200 dark:bg-black'>
+        <main className='flex min-h-screen flex-col items-center justify-between bg-slate-300 dark:bg-black'>
             <h1
-                className='fixed z-[100] invisible md:visible pt-4 text-slate-700 mr-24'
+                className='fixed z-[100] invisible md:visible pt-3 text-slate-700 self-center'
                 style={{ marginTop: "-10px" }}
             >
                 GLF Siding
             </h1>
-            <h2 className='fixed md:invisible'>GLF Siding</h2>
             <Navbar />
             <Main />
             <About />

@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div
             id='about'
-            className='w-full md:h-128 p-2 flex items-center pb-2 pt-28 md:pt-48'
+            className='w-full md:h-128 p-2 flex items-center pb-2 pt-12 md:pt-24'
         >
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
                 <div className='col-span-2 md:pt-0'>

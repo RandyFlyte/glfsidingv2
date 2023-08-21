@@ -1,20 +1,20 @@
 import Image from "next/legacy/image";
 import React from "react";
-import Html from "../../public/assets/skills/html.png";
-import Css from "../../public/assets/skills/css.png";
-import Javascript from "../../public/assets/skills/javascript.png";
-import ReactImg from "../../public/assets/skills/react.png";
-import Tailwind from "../../public/assets/skills/tailwind.png";
-import Github from "../../public/assets/skills/github1.png";
-import Firebase from "../../public/assets/skills/firebase.png";
-import NextJS from "../../public/assets/skills/nextjs.png";
+import Html from "../../public/assets/services/html.png";
+import Css from "../../public/assets/services/css.png";
+import Javascript from "../../public/assets/services/javascript.png";
+import ReactImg from "../../public/assets/services/react.png";
+import Tailwind from "../../public/assets/services/tailwind.png";
+import Github from "../../public/assets/services/github1.png";
+import Firebase from "../../public/assets/services/firebase.png";
+import NextJS from "../../public/assets/services/nextjs.png";
 
-const Skills = () => {
+const services = () => {
     return (
-        <div id='skills' className='w-full lg:h-screen p-2'>
+        <div id='services' className='w-full lg:h-screen p-2'>
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-                    Skills
+                    Services
                 </p>
                 <h2 className='py-4'>What I Can Do</h2>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
@@ -144,4 +144,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default services;
