@@ -16,49 +16,50 @@ const Navbar = () => {
     };
 
     return (
-        <div className='fixed w-full h-24 shadow-xl z-[100]'>
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+        <div className='fixed w-full h-30 shadow-xl z-[50] bg-slate-200'>
+            <div className='flex justify-between pb-6 pt-3 items-center w-full h-full px-2 2xl:px-16'>
                 <Image
                     src='/assets/glfLogo.png'
                     alt=''
                     width='151'
                     height='63'
+                    className='pt-10'
                 />
                 <div>
-                    <ul className='hidden md:flex pt-10'>
+                    <ul className='hidden md:flex pt-20'>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
+                            <li className='ml-10 text-base uppercase hover:underline'>
                                 Home
                             </li>
                         </Link>
                         <Link href='/#about'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
+                            <li className='ml-10 text-base uppercase hover:underline'>
                                 About
                             </li>
                         </Link>
                         <Link href='/#skills'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
+                            <li className='ml-10 text-base uppercase hover:underline'>
                                 Skills
                             </li>
                         </Link>
                         <Link href='/projects'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
+                            <li className='ml-10 text-base uppercase hover:underline'>
                                 Projects
                             </li>
                         </Link>
                         <Link href='/#reviews'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
+                            <li className='ml-10 text-base uppercase hover:underline'>
                                 Reviews
                             </li>
                         </Link>
                         <Link href='/#contact'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
+                            <li className='ml-10 text-base uppercase hover:underline'>
                                 Contact
                             </li>
                         </Link>
                     </ul>
-                    <div onClick={handleNav} className='md:hidden'>
-                        <AiOutlineMenu size={25} />
+                    <div onClick={handleNav} className='md:hidden pr-5'>
+                        <AiOutlineMenu size={35} />
                     </div>
                 </div>
             </div>
@@ -81,12 +82,13 @@ const Navbar = () => {
                     }
                 >
                     <div>
-                        <div className='flex w-full items-center justify-between'>
+                        <div className='flex w-full items-center justify-between pl-10'>
                             <Image
-                                src='/assets/navLogo.png'
+                                src='/assets/glfLogo.png'
                                 width='87'
                                 height='35'
                                 alt='/'
+                                className='pl-10'
                             />
                             <div
                                 onClick={handleNav}
@@ -102,25 +104,25 @@ const Navbar = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='py-4 flex flex-col'>
+                    <div className='py-2 flex flex-col'>
                         <ul className='uppercase'>
                             <Link href='/'>
-                                <li className='py-4 text-sm'>Home</li>
+                                <li className='py-4 text-base'>Home</li>
                             </Link>
                             <Link onClick={handleNav} href='/#about'>
-                                <li className='py-4 text-sm'>About</li>
+                                <li className='py-4 text-base'>About</li>
                             </Link>
                             <Link onClick={handleNav} href='/#skills'>
-                                <li className='py-4 text-sm'>Skills</li>
+                                <li className='py-4 text-base'>Skills</li>
                             </Link>
                             <Link href='/projects'>
-                                <li className='py-4 text-sm'>Projects</li>
+                                <li className='py-4 text-base'>Projects</li>
                             </Link>
                             <Link href='/#reviews'>
-                                <li className='py-4 text-sm'>Reviews</li>
+                                <li className='py-4 text-base'>Reviews</li>
                             </Link>
                             <Link href='/#contact'>
-                                <li className='py-4 text-sm'>Contact</li>
+                                <li className='py-4 text-base'>Contact</li>
                             </Link>
                         </ul>
                         <div className='pt-40 '>

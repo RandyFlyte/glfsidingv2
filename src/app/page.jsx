@@ -8,9 +8,9 @@ import Reviews from "../components/Reviews";
 
 export default function Home() {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-between p-2 bg-slate-100'>
+        <main className='flex min-h-screen flex-col items-center justify-between p-2 bg-slate-200'>
             <h1
-                className='fixed invisible md:visible'
+                className='fixed z-[100] invisible md:visible pt-4 text-slate-700 mr-24'
                 style={{ marginTop: "-10px" }}
             >
                 GLF Siding
