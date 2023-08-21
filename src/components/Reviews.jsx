@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 const Reviews = () => {
     return (
         <div id='reviews' className='w-full'>
@@ -8,6 +10,13 @@ const Reviews = () => {
                 <p className='text-base px-5 inline-flex'>
                     From our customers!
                 </p>
+                <Image
+                    src='/assets/reviews/Irene.png'
+                    alt=''
+                    width='665'
+                    height='234'
+                    className='pt-10'
+                />
             </div>
         </div>
     );

@@ -16,17 +16,24 @@ const Navbar = () => {
     };
 
     return (
-        <div className='fixed w-full h-30 shadow-xl z-[50] bg-slate-200'>
-            <div className='flex justify-between pb-6 pt-3 items-center w-full h-full px-2 2xl:px-16'>
-                <Image
-                    src='/assets/glfLogo.png'
-                    alt=''
-                    width='151'
-                    height='63'
-                    className='pt-10'
-                />
+        <div className='fixed w-full h-24 shadow-xl z-[90] bg-slate-200'>
+            <Link className='flex underline float-left' href='/#contact'>
+                <li className='ml-10 text-base uppercase hover:text-lg'>
+                    Contact Us!
+                </li>
+            </Link>
+            <div className='flex justify-between pb-6 pt-0 items-center w-full h-full px-2 2xl:px-16'>
+                <Link href='/'>
+                    <Image
+                        src='/assets/glfLogo.png'
+                        alt=''
+                        width='151'
+                        height='63'
+                        className='pt-0'
+                    />
+                </Link>
                 <div>
-                    <ul className='hidden md:flex pt-20'>
+                    <ul className='hidden md:flex pt-12'>
                         <Link href='/'>
                             <li className='ml-10 text-base uppercase hover:underline'>
                                 Home
@@ -58,7 +65,10 @@ const Navbar = () => {
                             </li>
                         </Link>
                     </ul>
-                    <div onClick={handleNav} className='md:hidden pr-5'>
+                    <div
+                        onClick={handleNav}
+                        className='md:hidden pr-5 float-right'
+                    >
                         <AiOutlineMenu size={35} />
                     </div>
                 </div>
@@ -115,13 +125,13 @@ const Navbar = () => {
                             <Link onClick={handleNav} href='/#skills'>
                                 <li className='py-4 text-base'>Skills</li>
                             </Link>
-                            <Link href='/projects'>
+                            <Link onClick={handleNav} href='/projects'>
                                 <li className='py-4 text-base'>Projects</li>
                             </Link>
-                            <Link href='/#reviews'>
+                            <Link onClick={handleNav} href='/#reviews'>
                                 <li className='py-4 text-base'>Reviews</li>
                             </Link>
-                            <Link href='/#contact'>
+                            <Link onClick={handleNav} href='/#contact'>
                                 <li className='py-4 text-base'>Contact</li>
                             </Link>
                         </ul>
