@@ -20,10 +20,10 @@ const Navbar = () => {
             <div className='flex justify-evenly pb-0 pt-0 items-center w-full h-full px-0 2xl:px-16 flex-row'>
                 <div className='flex w-auto'>
                     <div className='flex flex-col self-center basis-5 md:basis-1'>
-                        <Link href='/' className=''>
+                        <Link href='/'>
                             <Image
                                 src='/assets/glfLogo.png'
-                                alt=''
+                                alt='GLF Siding Logo'
                                 width='151'
                                 height='63'
                                 className='pt-0 self-center'
