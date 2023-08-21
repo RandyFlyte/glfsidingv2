@@ -3,7 +3,7 @@ import Projects from "../../components/Projects";
 
 export default function ProjectsPage() {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+        <main className='flex min-h-screen flex-col items-center justify-between p-24 pt-0'>
             <h1 className=''>Our projects</h1>
             <Navbar />
             <Projects />

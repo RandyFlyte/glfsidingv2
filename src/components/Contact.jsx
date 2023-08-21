@@ -29,44 +29,26 @@ const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <h2 className='py-2'>Clint Briley</h2>
-                                <p>Front-End Developer</p>
+                                <h2 className='py-2 px-16'>GLF Siding</h2>
+                                <p>
+                                    {" "}
+                                    - Siding, Windows, Doors, and Siding Repairs
+                                    -
+                                </p>
                                 <p className='py-4'>
-                                    I am available for freelance or full-time
-                                    positions. Contact me and let&apos;s talk.
+                                    Contact us now for a free estimate.
                                 </p>
                             </div>
                             <div>
-                                <p className='uppercase pt-8'>
-                                    Connect With Me
-                                </p>
+                                <p className='pt-8'>Connect With Me</p>
                                 <div className='flex items-center justify-between py-4'>
-                                    <a
-                                        href='https://www.linkedin.com/in/clint-briley-50056920a/'
-                                        target='_blank'
-                                        rel='noreferrer'
-                                    >
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                            <FaLinkedinIn />
-                                        </div>
-                                    </a>
-                                    <a
-                                        href='https://github.com/fireclint'
-                                        target='_blank'
-                                        rel='noreferrer'
-                                    >
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                            <FaGithub />
-                                        </div>
-                                    </a>
-
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                         <AiOutlineMail />
                                     </div>
                                     <Link href='/resume'>
-                                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                                <BsFillPersonLinesFill />
-                                            </div>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                            <BsFillPersonLinesFill />
+                                        </div>
                                     </Link>
                                 </div>
                             </div>
@@ -142,12 +124,12 @@ const Contact = () => {
                 </div>
                 <div className='flex justify-center py-12'>
                     <Link href='/'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <HiOutlineChevronDoubleUp
-                                    className='text-[#5651e5]'
-                                    size={30}
-                                />
-                            </div>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <HiOutlineChevronDoubleUp
+                                className='text-[#5651e5]'
+                                size={30}
+                            />
+                        </div>
                     </Link>
                 </div>
             </div>

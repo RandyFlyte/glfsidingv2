@@ -49,7 +49,7 @@ const Navbar = () => {
                                 Skills
                             </li>
                         </Link>
-                        <Link href='/projects'>
+                        <Link href='/#projects'>
                             <li className='ml-10 text-base uppercase hover:underline'>
                                 Projects
                             </li>
@@ -109,14 +109,14 @@ const Navbar = () => {
                         </div>
                         <div className='border-b border-gray-300 my-2'>
                             <p className='w-[85%] md:w-[90%] py-1 text-lg'>
-                                <span className='font-medium'>GLF</span> Siding
-                                - Windows - Doors
+                                <span className='font-medium'>GLF Siding</span>-
+                                Windows - Doors - Repairs
                             </p>
                         </div>
                     </div>
                     <div className='py-2 flex flex-col'>
                         <ul className='uppercase'>
-                            <Link href='/'>
+                            <Link onClick={handleNav} href='/'>
                                 <li className='py-4 text-base'>Home</li>
                             </Link>
                             <Link onClick={handleNav} href='/#about'>
@@ -125,7 +125,7 @@ const Navbar = () => {
                             <Link onClick={handleNav} href='/#skills'>
                                 <li className='py-4 text-base'>Skills</li>
                             </Link>
-                            <Link onClick={handleNav} href='/projects'>
+                            <Link onClick={handleNav} href='/#projects'>
                                 <li className='py-4 text-base'>Projects</li>
                             </Link>
                             <Link onClick={handleNav} href='/#reviews'>
@@ -140,12 +140,12 @@ const Navbar = () => {
                                 Let's Connect
                             </p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-point hover:scale-105 ease-in duration-300'>
+                                {/* <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-point hover:scale-105 ease-in duration-300'>
                                     <FaLinkedinIn />
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-point hover:scale-105 ease-in duration-300'>
                                     <FaGithub />
-                                </div>
+                                </div> */}
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-point hover:scale-105 ease-in duration-300'>
                                     <AiOutlineMail />
                                 </div>

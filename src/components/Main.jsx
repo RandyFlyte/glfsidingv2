@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
-import AboutImg from "../../public/assets/about.jpg";
+import Link from "next/link";
 
 const Main = () => {
     return (
@@ -13,18 +12,20 @@ const Main = () => {
                 alt='/'
             /> */}
 
-            <div className='max-w-[1240px] w-full h-10 mx-auto p-2 flex justify-center items-center absolute top-0'>
-                <div className='text-gray-200 pt-10'>
-                    <p className='uppercase text-sm tracking-widest text-gray-200 bg-slate-400 '>
+            <div className='max-w-[1240px] w-full h-100 mx-auto p-0 flex justify-start absolute top-0'>
+                <div className='text-gray-200 pt-0 sm:px-48'>
+                    <h2 className='uppercase text-sm tracking-widest text-gray-200 bg-slate-400 '>
                         We at GLF Siding Specialize in Siding, Windows, and
                         Doors!
                         <span className='pt-4 bg-slate-400'>
                             {/* GLF Siding Specialize in Siding, Windows, and Doors! */}
                         </span>
-                    </p>
-                    <h1 className='text-gray-100 bg-slate-500'>
-                        Get a free estimate now!
-                    </h1>
+                    </h2>
+                    <Link href='/#contact'>
+                        <h3 className='text-gray-100 bg-slate-500'>
+                            Get a free estimate now!
+                        </h3>
+                    </Link>
                 </div>
             </div>
         </div>

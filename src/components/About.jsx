@@ -7,14 +7,13 @@ const About = () => {
     return (
         <div
             id='about'
-            className='w-full md:h-128 p-2 flex items-center pb-16 pt-24 md:pt-16'
+            className='w-full md:h-128 p-2 flex items-center pb-2 pt-28 md:pt-48'
         >
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-                <div className='col-span-2'>
-                    <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
+                <div className='col-span-2 md:pt-0'>
+                    <p className='uppercase text-xl tracking-widest text-[#5651e5] '>
                         About Us
                     </p>
-                    <h2 className='py-4'>Who GLF Siding Is</h2>
                     <p className='py-2 text-gray-600'>
                         We are a family owned business with 35 years of
                         experience in serving Northern New Jersey. Our
