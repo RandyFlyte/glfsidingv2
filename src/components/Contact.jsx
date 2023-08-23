@@ -5,7 +5,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../../public/assets/contact.jpg";
 
@@ -59,9 +58,10 @@ const Contact = () => {
                     <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                         <div className='p-4'>
                             <form
-                                action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
+                                action='/api/sendMail/test'
                                 method='POST'
                                 encType='multipart/form-data'
+                                onSubmit={handleSubmit}
                             >
                                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                     <div className='flex flex-col'>
@@ -71,7 +71,7 @@ const Contact = () => {
                                         <input
                                             className='border-2 rounded-lg p-3 flex border-gray-300'
                                             type='text'
-                                            name='name'
+                                            name='customer-name'
                                         />
                                     </div>
                                     <div className='flex flex-col'>
@@ -115,7 +115,10 @@ const Contact = () => {
                                         name='message'
                                     ></textarea>
                                 </div>
-                                <button className='w-full p-4 text-gray-100 mt-4'>
+                                <button
+                                    type='submit'
+                                    className='w-full p-4 text-gray-800 mt-4'
+                                >
                                     Send Message
                                 </button>
                             </form>
@@ -135,6 +138,20 @@ const Contact = () => {
             </div>
         </div>
     );
+};
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const response = await fetch("/api/sendMail", {
+        method: "POST",
+        body: formData,
+    });
+    if (response.status === 200) {
+        alert("Email sent successfully");
+    } else {
+        alert("Error sending email");
+    }
 };
 
 export default Contact;

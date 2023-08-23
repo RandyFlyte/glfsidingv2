@@ -5,8 +5,8 @@ import ContactPage from "../components/Contact";
 import Skills from "../components/Services";
 import ProjectsPage from "../components/Projects";
 import Reviews from "../components/Reviews";
-
 export default function Home() {
+    const dotenv = require("dotenv").config();
     return (
         <main
             id='Home-Main'
