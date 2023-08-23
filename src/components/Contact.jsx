@@ -123,11 +123,11 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='flex justify-center py-12'>
-                    <Link href='/'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <Link href='/' className='fixed bottom-6 left-8'>
+                        <div className='rounded-full shadow-lg shadow-gray-800 bg-slate-200 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <HiOutlineChevronDoubleUp
                                 className='text-[#5651e5]'
-                                size={30}
+                                size={20}
                             />
                         </div>
                     </Link>

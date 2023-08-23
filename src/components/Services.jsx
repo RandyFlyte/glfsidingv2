@@ -5,20 +5,22 @@ import Css from "../../public/assets/services/css.png";
 import Javascript from "../../public/assets/services/javascript.png";
 import ReactImg from "../../public/assets/services/react.png";
 import Tailwind from "../../public/assets/services/tailwind.png";
-import Github from "../../public/assets/services/github1.png";
-import Firebase from "../../public/assets/services/firebase.png";
-import NextJS from "../../public/assets/services/nextjs.png";
 
-const services = () => {
+const Services = () => {
     return (
-        <div id='services' className='w-full lg:h-screen p-2'>
+        <div
+            id='Services'
+            className='text-3lg w-full lg:h-screen p-0 pt-24 lg:pt-0'
+        >
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-                <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-                    Services
-                </p>
-                <h2 className='py-4'>What I Can Do</h2>
+                <h2 className='text-2xl tracking-widest text-[#252979] self-center'>
+                    Services GLF Siding Provides
+                </h2>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div
+                        id='Services-Siding'
+                        className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+                    >
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -29,11 +31,14 @@ const services = () => {
                                 />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
-                                <h3>HTML</h3>
+                                <h3>Siding</h3>
                             </div>
                         </div>
                     </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div
+                        id='Services-Windows'
+                        className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+                    >
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -44,11 +49,14 @@ const services = () => {
                                 />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
-                                <h3>CSS</h3>
+                                <h3>Windows</h3>
                             </div>
                         </div>
                     </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div
+                        id='Services-EntryDoors'
+                        className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+                    >
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -59,11 +67,14 @@ const services = () => {
                                 />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
-                                <h3>JavaScript</h3>
+                                <h3>Entry Doors</h3>
                             </div>
                         </div>
                     </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div
+                        id='Services-GarageDoors'
+                        className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+                    >
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -74,11 +85,14 @@ const services = () => {
                                 />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
-                                <h3>React</h3>
+                                <h3>Garage Doors</h3>
                             </div>
                         </div>
                     </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div
+                        id='Services-Repairs'
+                        className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+                    >
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -89,52 +103,7 @@ const services = () => {
                                 />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
-                                <h3>Tailwind</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                                <Image
-                                    src={Firebase}
-                                    width='64px'
-                                    height='64px'
-                                    alt='/'
-                                />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Firebase</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                                <Image
-                                    src={Github}
-                                    width='64px'
-                                    height='64px'
-                                    alt='/'
-                                />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Github</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                                <Image
-                                    src={NextJS}
-                                    width='64px'
-                                    height='64px'
-                                    alt='/'
-                                />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Next</h3>
+                                <h3>Aluminum/Siding Repairs</h3>
                             </div>
                         </div>
                     </div>
@@ -144,4 +113,4 @@ const services = () => {
     );
 };
 
-export default services;
+export default Services;

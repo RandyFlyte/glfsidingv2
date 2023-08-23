@@ -8,13 +8,10 @@ import Reviews from "../components/Reviews";
 
 export default function Home() {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-between bg-slate-300 dark:bg-black'>
-            <h1
-                className='fixed z-[100] invisible md:visible pt-3 text-slate-700 self-center'
-                style={{ marginTop: "-10px" }}
-            >
-                GLF Siding
-            </h1>
+        <main
+            id='Home-Main'
+            className='relative flex min-h-screen flex-col items-center justify-between bg-slate-300 dark:bg-black'
+        >
             <Navbar />
             <Main />
             <About />
@@ -28,5 +25,5 @@ export default function Home() {
 
 export const metadata = {
     title: "GLF Siding",
-    description: "We Install Siding and Windows",
+    description: "GLF Siding Install Siding and Windows",
 };

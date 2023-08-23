@@ -5,7 +5,6 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
@@ -16,11 +15,23 @@ const Navbar = () => {
     };
 
     return (
-        <div className='fixed w-full h-auto shadow-xl z-[90] bg-slate-200'>
-            <div className='flex justify-evenly pb-0 pt-0 items-center w-full h-full px-0 2xl:px-16 flex-row'>
-                <div className='flex w-auto'>
-                    <div className='flex flex-col self-center basis-5 md:basis-1'>
-                        <Link href='/'>
+        <nav
+            id='Navbar-Root'
+            className='relative lg:fixed w-full h-auto shadow-xl z-[90] bg-slate-200'
+        >
+            <div
+                id='Navbar-2nd-Deep'
+                className='relative flex justify-evenly pb-0 pt-2 md:items-center w-full h-full px-0 2xl:pr-16 flex-row'
+            >
+                <div
+                    id='Navbar-Logo-and-Contact-Link'
+                    className='md:flex md:grow md:w-auto'
+                >
+                    <div
+                        id='Logo-Contact'
+                        className='flex flex-col self-center basis-1 md:basis-1 items-center'
+                    >
+                        <Link href='/' className=''>
                             <Image
                                 src='/assets/glfLogo.png'
                                 alt='GLF Siding Logo'
@@ -30,18 +41,32 @@ const Navbar = () => {
                             />
                         </Link>
                         <Link className='flex self-center' href='/#contact'>
-                            <li className='ml-2 text-sm md:text-base underline hover:text-lg self-center'>
-                                Contact
-                            </li>
+                            <span className='ml-2 text-sm md:text-base underline hover:text-lg self-center pb-4'>
+                                Contact{" "}
+                                <span className='self-center'>GLF Siding</span>
+                            </span>
                         </Link>
                     </div>
-                    <div className='flex flex-col justify-between pr-0 md:pr-5'>
-                        <div className='self-center'>
+                </div>
+
+                <div
+                    id='Navbar-Links-Title-and-Mobile-Menu'
+                    className='w-64 md:w-full flex h-auto lg:h-20 flex-col relative lg:fixed'
+                >
+                    {/* Top Navbar Links */}
+                    <div
+                        id='Navbar-Links'
+                        className='flex flex-col flex-end gap-2 pr-0 md:pr-5 basis-1 pt-12'
+                    >
+                        <div
+                            id='Navbar-Links--About-Us-and-Reviews'
+                            className='self-center'
+                        >
                             <Link
                                 href='/#about'
                                 className='visible md:hidden uppercase underline px-4 self-center'
                             >
-                                About
+                                About Us
                             </Link>
                             <Link
                                 href='/#reviews'
@@ -50,24 +75,35 @@ const Navbar = () => {
                                 Reviews
                             </Link>
                         </div>
-                        <div className='self-center'>
+                        <div
+                            id='Navbar-Links--Services-and-Projects'
+                            className='self-center'
+                        >
+                            <Link
+                                href='/#Services'
+                                className='visible md:hidden uppercase underline px-4 self-center'
+                            >
+                                Services
+                            </Link>
                             <Link
                                 href='/#projects'
                                 className='visible md:hidden uppercase underline px-4 self-center'
                             >
                                 Projects
                             </Link>
-                            <Link
-                                href='/#services'
-                                className='visible md:hidden uppercase underline px-4 self-center'
-                            >
-                                Services
-                            </Link>
                         </div>
                     </div>
-                </div>
-                <div className='w-100 md:w-full pr-2'>
-                    <ul className='hidden md:flex pt-16 w-full justify-around'>
+                    <div className='flex flex-col md:flex-row'>
+                        {/* Main Title */}
+                        <h1
+                            id='Main-Title'
+                            className='relative self-end lg:fixed pr-7 text-center text-slate-700 text-2xl'
+                            style={{ marginTop: "0px" }}
+                        ></h1>
+                    </div>
+
+                    {/* Navbar Links - Medium-size+ */}
+                    <ul className='hidden md:flex md:fixed md:pt-2 pt-10 lg:pt-5 w-full justify-around pb-5'>
                         <Link href='/'>
                             <li className='ml-10 text-base uppercase underline hover:text-lg'>
                                 Home
@@ -78,7 +114,7 @@ const Navbar = () => {
                                 About
                             </li>
                         </Link>
-                        <Link href='/#services'>
+                        <Link href='/#Services'>
                             <li className='ml-10 text-base uppercase underline hover:text-lg self-center'>
                                 Services
                             </li>
@@ -99,11 +135,14 @@ const Navbar = () => {
                             </li>
                         </Link>
                     </ul>
+
+                    {/* Hamburger Menu Button */}
                     <div
+                        id='Hamburger-Menu'
                         onClick={handleNav}
-                        className='md:hidden w-auto cursor-pointer p-4'
+                        className='fixed md:hidden w-16 cursor-pointer ml-48 pt-0'
                     >
-                        <AiOutlineMenu size={35} />
+                        <AiOutlineMenu size={45} aria-label='Sidebar menu' />
                     </div>
                 </div>
             </div>
@@ -111,6 +150,7 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {/* Overlay */}
             <div
+                id='Mobile-Menu-Overlay'
                 className={
                     nav
                         ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80"
@@ -119,6 +159,7 @@ const Navbar = () => {
             >
                 {/* Side Drawer Menu */}
                 <div
+                    id='Side-Drawer-Menu'
                     className={
                         nav
                             ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-2 ease-in duration-500"
@@ -126,23 +167,21 @@ const Navbar = () => {
                     }
                 >
                     <div>
-                        <div className='flex w-full items-center justify-between pl-10'>
+                        <div className='flex w-full items-center justify-between pl-1 pr-2'>
                             <Link onClick={handleNav} href='/'>
                                 <Image
                                     src='/assets/glfLogo.png'
                                     width='87'
                                     height='35'
                                     alt='/'
-                                    className='pl-10'
+                                    className='pl-1'
                                 />
                             </Link>
                             <div
                                 onClick={handleNav}
-                                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                                className='rounded-full shadow-lg shadow-gray-400 cursor-pointer'
                             >
-                                <div>
-                                    <AiOutlineClose />
-                                </div>
+                                <AiOutlineClose fill='black' size={25} />
                             </div>
                         </div>
                         <div className='border-b border-gray-300 my-2'>
@@ -155,6 +194,8 @@ const Navbar = () => {
                             </p>
                         </div>
                     </div>
+
+                    {/* Sidebar Nav Links List */}
                     <div className='py-2 flex flex-col bg-slate-300'>
                         <ul className='uppercase'>
                             <Link onClick={handleNav} href='/'>
@@ -167,7 +208,7 @@ const Navbar = () => {
                                     About
                                 </li>
                             </Link>
-                            <Link onClick={handleNav} href='/#services'>
+                            <Link onClick={handleNav} href='/#Services'>
                                 <li className='py-4 text-base hover:text-lg'>
                                     Services
                                 </li>
@@ -188,6 +229,7 @@ const Navbar = () => {
                                 </li>
                             </Link>
                         </ul>
+
                         <div className='pt-40 '>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 {/* <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-point hover:scale-105 ease-in duration-300'>
@@ -207,7 +249,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
 
