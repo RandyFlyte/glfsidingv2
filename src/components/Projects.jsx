@@ -1,17 +1,16 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import propertyImg from "../../public/assets/projects/property.jpg";
-import cryptoImg from "../../public/assets/projects/crypto.jpg";
-import netflixImg from "../../public/assets/projects/netflix.jpg";
-import twitchImg from "../../public/assets/projects/twitch.jpg";
-import ProjectItem from "./ProjectItem";
+import Link from 'next/link';
+import React from 'react';
+import propertyImg from '../../public/assets/projects/property.jpg';
+import cryptoImg from '../../public/assets/projects/crypto.jpg';
+import netflixImg from '../../public/assets/projects/netflix.jpg';
+import twitchImg from '../../public/assets/projects/twitch.jpg';
+import ProjectItem from './ProjectItem';
 
 const Projects = () => {
     return (
-        <div id='projects' className='w-full pt-28'>
-            <div className='max-w-[1240px] mx-auto px-2 pt-18 py-16'>
-                <p className='text-xl tracking-widest uppercase pt-48 text-[#5651e5]'>
+        <div id='projects' className='w-full'>
+            <div className='max-w-[1240px] mx-auto px-2 py-16'>
+                <p className='text-xl tracking-widest uppercase text-[#1e1c58]'>
                     Projects
                 </p>
                 <div className='flex'>
@@ -20,8 +19,7 @@ const Projects = () => {
                     </h2>
                     <Link
                         href='/projects'
-                        className='underline float pt-6 px-5 hover:text-lg'
-                    >
+                        className='underline float pt-6 px-5 hover:text-lg'>
                         Click here to view more projects!
                     </Link>
                 </div>

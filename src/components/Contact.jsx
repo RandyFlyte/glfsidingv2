@@ -1,24 +1,23 @@
-"use client";
+'use client';
 
-import Image from "next/legacy/image";
-import Link from "next/link";
-import React, { useState } from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import ContactImg from "../../public/assets/contact.jpg";
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import ContactImg from '../../public/assets/contact.jpg';
 
 const Contact = () => {
     return (
-        <div id='contact' className='w-full lg:h-screen'>
+        <div id='contact' className='w-full h-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-                <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-                    Contact
-                </p>
-                <h2 className='py-4'>Get In Touch</h2>
+                <h2 className='text-xl tracking-widest uppercase text-[#1e1c58] pl-4'>
+                    Contact GLF Siding
+                </h2>
                 <div className='grid lg:grid-cols-5 gap-8'>
-                    {/* left */}
-                    <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+                    {/* Contact top */}
+                    <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 hidden md:visible'>
                         <div className='lg:p-4 h-full '>
                             <div>
                                 <Image
@@ -28,18 +27,13 @@ const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <h2 className='py-2 px-16'>GLF Siding</h2>
-                                <p>
-                                    {" "}
-                                    - Siding, Windows, Doors, and Siding Repairs
-                                    -
-                                </p>
+                                <span>862-254-4566</span>
+                                <span>glfsiding@gmail.com</span>
                                 <p className='py-4'>
                                     Contact us now for a free estimate.
                                 </p>
                             </div>
                             <div>
-                                <p className='pt-8'>Connect With Me</p>
                                 <div className='flex items-center justify-between py-4'>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                         <AiOutlineMail />
@@ -54,77 +48,91 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* right */}
-                    <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+                    {/* Contact Form */}
+                    <section
+                        id='Contact-Form'
+                        className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                         <div className='p-4'>
                             <form
                                 action='/api/sendMail/test'
                                 method='POST'
                                 encType='multipart/form-data'
-                                onSubmit={handleSubmit}
-                            >
-                                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                                    <div className='flex flex-col'>
-                                        <label className='uppercase text-sm py-2'>
-                                            Name
+                                onSubmit={handleSubmit}>
+                                <fieldset>
+                                    <legend>Contact GLF Siding</legend>
+                                    <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+                                        <div className='flex flex-col'>
+                                            <label
+                                                for='name'
+                                                className='uppercase text-sm py-2'>
+                                                Name
+                                            </label>
+                                            <input
+                                                className='border-2 rounded-lg p-3 flex border-gray-300'
+                                                type='text'
+                                                name='customer-name'
+                                            />
+                                        </div>
+                                        <div className='flex flex-col'>
+                                            <label
+                                                for='phone'
+                                                className='uppercase text-sm py-2'>
+                                                Phone Number
+                                            </label>
+                                            <input
+                                                className='border-2 rounded-lg p-3 flex border-gray-300'
+                                                type='tel'
+                                                name='phone'
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-col py-2'>
+                                        <label
+                                            for='email'
+                                            className='uppercase text-sm py-2'>
+                                            E-mail
+                                        </label>
+                                        <input
+                                            className='border-2 rounded-lg p-3 flex border-gray-300'
+                                            type='email'
+                                            name='email'
+                                        />
+                                    </div>
+                                    <div className='flex flex-col py-2'>
+                                        <label
+                                            for='subject'
+                                            className='uppercase text-sm py-2'>
+                                            Subject
                                         </label>
                                         <input
                                             className='border-2 rounded-lg p-3 flex border-gray-300'
                                             type='text'
-                                            name='customer-name'
+                                            name='subject'
                                         />
                                     </div>
-                                    <div className='flex flex-col'>
-                                        <label className='uppercase text-sm py-2'>
-                                            Phone Number
+                                    <div className='flex flex-col py-2'>
+                                        <label
+                                            for='message'
+                                            className='uppercase text-sm py-2'>
+                                            Message
                                         </label>
-                                        <input
-                                            className='border-2 rounded-lg p-3 flex border-gray-300'
-                                            type='text'
-                                            name='phone'
-                                        />
+                                        <textarea
+                                            className='border-2 rounded-lg p-3 border-gray-300'
+                                            rows='10'
+                                            name='message'></textarea>
                                     </div>
-                                </div>
-                                <div className='flex flex-col py-2'>
-                                    <label className='uppercase text-sm py-2'>
-                                        Email
-                                    </label>
-                                    <input
-                                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                                        type='email'
-                                        name='email'
-                                    />
-                                </div>
-                                <div className='flex flex-col py-2'>
-                                    <label className='uppercase text-sm py-2'>
-                                        Subject
-                                    </label>
-                                    <input
-                                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                                        type='text'
-                                        name='subject'
-                                    />
-                                </div>
-                                <div className='flex flex-col py-2'>
-                                    <label className='uppercase text-sm py-2'>
-                                        Message
-                                    </label>
-                                    <textarea
-                                        className='border-2 rounded-lg p-3 border-gray-300'
-                                        rows='10'
-                                        name='message'
-                                    ></textarea>
-                                </div>
-                                <button
-                                    type='submit'
-                                    className='w-full p-4 text-gray-800 mt-4'
-                                >
-                                    Send Message
-                                </button>
+                                    <button
+                                        type='submit'
+                                        className='w-full p-4 text-gray-300 mt-4 bg-slate-600'>
+                                        Send Message
+                                    </button>
+                                </fieldset>
                             </form>
                         </div>
-                    </div>
+                    </section>
                 </div>
+
+                {/* To top button */}
                 <div className='flex justify-center py-12'>
                     <Link href='/' className='fixed bottom-6 left-8'>
                         <div className='rounded-full shadow-lg shadow-gray-800 bg-slate-200 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
@@ -143,14 +151,14 @@ const Contact = () => {
 const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const response = await fetch("/api/sendMail", {
-        method: "POST",
+    const response = await fetch('/api/sendMail', {
+        method: 'POST',
         body: formData,
     });
     if (response.status === 200) {
-        alert("Email sent successfully");
+        alert('Email sent successfully');
     } else {
-        alert("Error sending email");
+        alert('Error sending email');
     }
 };
 
