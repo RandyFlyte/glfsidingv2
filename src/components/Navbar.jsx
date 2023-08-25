@@ -38,8 +38,7 @@ const Navbar = () => {
                         </Link>
                         <Link className='flex self-center' href='/#contact'>
                             <span className='ml-2 text-sm md:text-base underline hover:text-lg self-center pb-4'>
-                                Contact{' '}
-                                <span className='self-center'>GLF Siding</span>
+                                Contact <span className='self-center'>GLF</span>
                             </span>
                         </Link>
                     </div>
@@ -90,7 +89,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Navbar Links - Medium-size+ */}
-                    <ul className='hidden md:flex md:fixed md:pt-2 pt-10 lg:pt-5 w-full justify-around pb-5'>
+                    <ul className='hidden md:flex md:fixed md:pt-0 pt-10 lg:pt-5 w-full justify-around pb-5'>
                         <Link href='/'>
                             <li className='ml-10 text-base uppercase underline hover:text-lg'>
                                 Home

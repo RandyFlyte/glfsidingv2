@@ -1,6 +1,6 @@
 const ReviewCard = ({ custName, timeAgo, reviewMessage, responseMessage }) => {
     return (
-        <div>
+        <div className='border-2 border-blue-100/75 shadow-xl rounded-lg p-1 m-2 mt-8 bg-slate-100'>
             <link
                 rel='stylesheet'
                 href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'></link>
@@ -26,7 +26,7 @@ const ReviewCard = ({ custName, timeAgo, reviewMessage, responseMessage }) => {
                         class='fa fa-star checked'
                         style={{ color: 'orange' }}></span>
                 </section>
-                <span className='flex'>{timeAgo}</span>
+                <span className='flex pl-2 text-sm'>{timeAgo}</span>
             </div>
 
             {/* Review message */}
