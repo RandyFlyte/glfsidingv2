@@ -1,11 +1,11 @@
-var nodemailer = require("nodemailer");
+var nodemailer = require('nodemailer');
 //-----------------------------------------------------------------------------
 export async function sendMail(subject, toEmail, otpText) {
     const nodeMail = process.env.NEXT_PUBLIC_NODEMAILER_EMAIL;
     const nodeMailPw = process.env.NEXT_PUBLIC_NODEMAILER_PW;
 
     var transporter = nodemailer.createTransport({
-        service: "gmail",
+        service: 'gmail',
         auth: {
             user: nodeMail,
             pass: nodeMailPw,
@@ -13,9 +13,9 @@ export async function sendMail(subject, toEmail, otpText) {
     });
 
     var mailOptions = {
-        from: nodeMail,
-        to: toEmail,
-        subject: subject,
+        from: toEmail,
+        to: nodeMail,
+        subject: toEmail,
         text: otpText,
     };
 
@@ -23,7 +23,7 @@ export async function sendMail(subject, toEmail, otpText) {
         if (error) {
             throw new Error(error);
         } else {
-            console.log("Email Sent");
+            console.log('Email Sent');
             return true;
         }
     });
