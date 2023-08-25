@@ -35,7 +35,7 @@ const ReviewCard = ({ custName, timeAgo, reviewMessage, responseMessage }) => {
             {/* Conditional rendering for Response */}
             {responseMessage && (
                 <section id='response'>
-                    <strong>Owner's Response:</strong> {responseMessage}
+                    <strong>Owner&apos;s Response:</strong> {responseMessage}
                 </section>
             )}
         </div>
