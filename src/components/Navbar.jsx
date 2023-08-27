@@ -126,7 +126,8 @@ const Navbar = () => {
                     <div
                         id='Hamburger-Menu'
                         onClick={handleNav}
-                        className='fixed md:hidden w-16 cursor-pointer ml-48 pt-0'>
+                        className='fixed md:hidden w-12 self-end cursor-pointer ml-24 pt-0 mr-2 bg-slate-500/50
+                        rounded-lg'>
                         <AiOutlineMenu size={45} aria-label='Sidebar menu' />
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const About = () => {
         >
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
                 <div className='col-span-2 md:pt-0'>
-                    <p className='uppercase text-xl tracking-widest text-[#1e1c58] pl-4'>
+                    <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4'>
                         About Us
                     </p>
                     <p className='py-2 text-gray-800'>

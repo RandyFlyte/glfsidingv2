@@ -12,7 +12,7 @@ const Contact = () => {
     return (
         <div id='contact' className='w-full h-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-                <h2 className='text-xl tracking-widest uppercase text-[#1e1c58] pl-4'>
+                <h2 className='text-2xl tracking-widest uppercase text-[#1e1c58] pl-4'>
                     Contact GLF Siding
                 </h2>
                 <div className='grid lg:grid-cols-5 gap-8'>
