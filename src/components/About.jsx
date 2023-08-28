@@ -1,14 +1,13 @@
-import React from "react";
-import Image from "next/legacy/image";
-import Link from "next/link";
-import AboutImg from "../../public/assets/about.jpg";
+import React from 'react';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import AboutImg from '../../public/assets/about.jpg';
 
 const About = () => {
     return (
         <section
             id='about'
-            className='w-full md:h-128 p-2 flex items-center pb-2 pt-28 md:pt-36'
-        >
+            className='w-full md:h-128 p-2 flex items-center pb-2 pt-28 md:pt-36 scroll-snap-start'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
                 <div className='col-span-2 md:pt-0'>
                     <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4'>

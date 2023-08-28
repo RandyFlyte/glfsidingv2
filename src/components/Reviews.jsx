@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Reviews = () => {
     return (
-        <div id='reviews' className='w-full'>
+        <div id='reviews' className='w-full scroll-snap-start'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
                 <h2 className='text-2xl inline-flex tracking-widest uppercase p-2 text-[#1e1c58]'>
                     Reviews
