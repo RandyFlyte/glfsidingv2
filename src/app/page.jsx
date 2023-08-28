@@ -7,22 +7,23 @@ import ProjectsPage from '../components/Projects';
 import Reviews from '../components/Reviews';
 
 export default function Home() {
-    return (
-        <main
-            id='Home-Main'
-            className='relative flex min-h-screen flex-col items-center justify-between bg-slate-100 dark:bg-black'>
-            <Navbar />
-            <Main />
-            <About />
-            <Skills />
-            <ProjectsPage />
-            <Reviews />
-            <ContactPage />
-        </main>
-    );
+  return (
+    <main
+      id='Home-Main'
+      className='relative flex min-h-screen flex-col items-center justify-between bg-slate-100 dark:bg-black bg-gradient-to-br from-slate-400 to-white
+      '>
+      <Navbar />
+      <Main />
+      <About />
+      <Skills />
+      <ProjectsPage />
+      <Reviews />
+      <ContactPage />
+    </main>
+  );
 }
 
 export const metadata = {
-    title: 'GLF Siding',
-    description: 'GLF Siding Install Siding and Windows',
+  title: 'GLF Siding',
+  description: 'GLF Siding Install Siding and Windows',
 };
