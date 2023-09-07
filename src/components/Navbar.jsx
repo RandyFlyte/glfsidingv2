@@ -38,7 +38,7 @@ const Navbar = () => {
               />
             </Link>
             <Link className='flex self-center' href='/#contact'>
-              <span className='text-slate-200 bg-sky-950 rounded-xl ml-2 text-sm md:text-base underline hover:text-lg self-center p-1'>
+              <span className='text-slate-200 bg-sky-950 rounded-xl ml-1 text-sm md:text-base underline hover:text-lg self-center p-1 mb-1'>
                 Contact
               </span>
             </Link>
@@ -51,18 +51,18 @@ const Navbar = () => {
           {/* Top Navbar Links */}
           <div
             id='Navbar-Links'
-            className='flex flex-col flex-end gap-2 pr-0 md:pr-5 basis-1 pt-12'>
+            className='flex flex-col flex-end gap-2 pr-12 md:pr-5 basis-1 pt-8'>
             <section
               id='Navbar-Links--About-Us-and-Reviews'
               className='self-center'>
               <Link
                 href='/#about'
-                className='visible md:hidden uppercase underline px-4 self-center'>
+                className='visible md:hidden self-center p-1 text-slate-200 bg-sky-950 rounded-lg'>
                 About Us
               </Link>
               <Link
                 href='/#reviews'
-                className='visible md:hidden uppercase underline px-4 self-center'>
+                className='visible md:hidden p-1 ml-4 self-center text-slate-200 bg-sky-950 rounded-lg'>
                 Reviews
               </Link>
             </section>
@@ -71,12 +71,12 @@ const Navbar = () => {
               className='self-center'>
               <Link
                 href='/#Services'
-                className='visible md:hidden uppercase underline px-4 self-center'>
+                className='visible md:hidden p-1 self-center text-slate-200 bg-sky-950 rounded-lg'>
                 Services
               </Link>
               <Link
                 href='/#projects'
-                className='visible md:hidden uppercase underline px-4 self-center'>
+                className='visible md:hidden p-1 ml-4 self-center text-slate-200 bg-sky-950 rounded-lg'>
                 Projects
               </Link>
             </section>
