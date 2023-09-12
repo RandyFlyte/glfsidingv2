@@ -5,6 +5,7 @@ import ContactPage from '../components/Contact';
 import Skills from '../components/Services';
 import ProjectsPage from '../components/Projects';
 import Reviews from '../components/Reviews';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       '>
       <Navbar />
       <Main />
+      {/* <ImageCarousel /> */}
       <About />
       <Skills />
       <ProjectsPage />
