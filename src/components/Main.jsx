@@ -3,24 +3,30 @@ import Link from 'next/link';
 
 const Main = () => {
   return (
-    <section
-      id='Main-Root'
-      className='w-full h-auto text-center relative mt-6 md:mt-12'>
-      <div className='max-w-[960px] w-full mx-auto p-0 flex flex-col justify-start absolute top-0 lg:pt-24'>
+    <section id='Main-Root' className='w-full h-auto text-center relative mt-6'>
+      <div className='w-full mx-auto p-0 flex flex-col justify-start absolute top-0'>
         <h2
           id='Banner-Top'
-          className='uppercase text-base tracking-widest text-gray-200 bg-slate-800 '>
-          We at GLF Siding specialize in installing Siding, Windows, and Doors!
+          className='uppercase text-base tracking-widest text-gray-200 bg-slate-800 lg:text-lg'>
+          Garage Door installations and Repairs, Siding Repairs, and Windows!
         </h2>
+        <div className='flex justify-between p-1 text-blue-950 hover:text-stone-700 text-xl'>
+          <a
+            href='tel:+18622594566'
+            className='bg-slate-300 mr-1 rounded-lg visible lg:invisible'>
+            (862)259-4566
+          </a>
+          <a
+            href='mailto:glfsiding@gmail.com'
+            className='bg-slate-300 px-1 rounded-lg'>
+            glfsiding@gmail.com
+          </a>
+        </div>
         <Link href='/#contact'>
-          <h3 className='text-gray-100 bg-slate-500 underline'>
+          <h3 className='text-gray-100 bg-slate-600 underline p-2 lg:text-xl'>
             * Contact us for a free estimate now! *
           </h3>
         </Link>
-        <div className='flex justify-around'>
-          <span>(862)259-4566</span>
-          <span>glfsiding@gmail.com</span>
-        </div>
       </div>
     </section>
   );

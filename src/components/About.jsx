@@ -8,22 +8,23 @@ const About = () => {
   return (
     <section
       id='about'
-      className='w-full md:h-128 p-2 flex items-center pb-2 pt-28 md:pt-36
+      className='w-full p-2 flex items-center pb-2 mt-36
             '>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-        <div className='col-span-2 md:pt-0'>
-          <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4'>
+        <div className='col-span-2 '>
+          <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-8'>
             About Us
           </p>
           <p className='py-2 text-gray-800'>
-            We are a family owned business with 35 years of experience in
-            serving Northern New Jersey. Our specializations include the
-            installation of siding, windows, gutters, doors, trim, decks, and
-            garage doors. We also specialize in siding repairs and trim repairs.
-            Our attention to detail, cleanliness, professionalism, and ensuring
-            satisfied customers are left with a job well done are among GLF
-            Siding’s top priorities! You can contact us if you have any
-            questions or would like a free estimate.
+            We at GLF Siding are a proud family-owned business boasting 42 years
+            of dedicated service to Northern New Jersey. While we have pivoted
+            to specializing in garage door installations over the past several
+            years, we continue to offer our expertise in siding repairs, window
+            replacements, and entry doors. At GLF Siding, our hallmarks are
+            meticulous attention to detail, a clean work site, utmost
+            professionalism, and an unwavering commitment to customer
+            satisfaction. We invite you to reach out with any inquiries or to
+            request a complimentary estimate.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>

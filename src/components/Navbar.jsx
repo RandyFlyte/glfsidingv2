@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav
       id='Navbar-Root'
-      className='relative lg:fixed w-full h-auto shadow-xl z-[90] bg-[url("/assets/NavBackground.png")]
+      className='relative  w-full h-auto shadow-xl z-[90] bg-[url("/assets/NavBackground.png")]
         bg-center'>
       <div
         id='Navbar-2nd-Deep'
