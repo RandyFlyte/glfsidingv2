@@ -1,19 +1,10 @@
-import React from 'react';
-import Image from 'next/legacy/image';
 import Link from 'next/link';
-import AboutImg from '../../public/assets/about.jpg';
 import ImageCarousel from './ImageCarousel';
 
 const About = () => {
   return (
-    <section
-      id='about'
-      className='target:outline-dashed w-full p-2 flex items-center pb-2 mt-36'>
+    <section id='about' className='w-full p-2 flex items-center pb-2 mt-36'>
       <div className='max-w-[1240px] m-auto  grid-cols-3 gap-8'>
-        <div className='flex justify-between'>
-          <span className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-16'></span>
-        </div>
-
         <div className='col-span-2'>
           <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-8'>
             About Us

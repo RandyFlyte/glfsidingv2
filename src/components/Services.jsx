@@ -1,9 +1,8 @@
-import Image from 'next/legacy/image';
-import React from 'react';
-import Css from '../../public/assets/services/css.png';
-import Javascript from '../../public/assets/services/javascript.png';
-import ReactImg from '../../public/assets/services/react.png';
 import GarageDoorService from '../../public/assets/services/GarageDoorService.png';
+import netflixImg from '../../public/assets/projects/netflix.jpg';
+import twitchImg from '../../public/assets/projects/twitch.jpg';
+import garage_door_service from '../../public/assets/services/garage_door_service.png';
+import ProjectItem from './ProjectItem';
 
 const Services = () => {
   return (
@@ -43,37 +42,48 @@ const Services = () => {
             id='Services-Windows'
             className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src={Css} width='64px' height='64px' alt='/' />
-              </div>
+              <div className='m-auto'></div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>Siding Repairs</h3>
               </div>
             </div>
           </div>
+
           <div
             id='Services-EntryDoors'
             className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src={Javascript} width='64px' height='64px' alt='/' />
-              </div>
+              <div className='m-auto'></div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>Entry Doors</h3>
               </div>
             </div>
           </div>
+
           <div
             id='Services-GarageDoors'
             className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src={ReactImg} width='64px' height='64px' alt='/' />
-              </div>
+              <div className='m-auto'></div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>Window Replacement</h3>
               </div>
             </div>
+          </div>
+
+          <div className='grid md:grid-cols-2 gap-8'>
+            <ProjectItem
+              title='Garage Door Replacement'
+              backgroundImg={GarageDoorService}
+              projectUrl='/garage-doors'
+              tech='Residential'
+            />
+            <ProjectItem
+              title='Garage Door Repairs'
+              backgroundImg={garage_door_service}
+              projectUrl='/garage-door-repairs'
+              tech='Residential'
+            />
           </div>
         </div>
       </div>

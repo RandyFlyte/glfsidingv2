@@ -21,7 +21,7 @@ const Main = () => {
           </a>
         </div>
         <Link href='/#contact'>
-          <h3 className='text-gray-100 bg-slate-600 underline p-2 lg:text-xl'>
+          <h3 className='text-gray-100 animate-pulse bg-slate-600 underline p-2 lg:text-xl'>
             * Contact us for a FREE estimate now! *
           </h3>
         </Link>

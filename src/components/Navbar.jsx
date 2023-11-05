@@ -37,7 +37,7 @@ const Navbar = () => {
                 alt='GLF Siding Logo'
                 width='110'
                 height='110'
-                className='h-auto rounded-[3rem] transition-all duration-1000 ease-in-out hover:scale-110  hover:rounded-[2rem] hover:shadow-2xl
+                className='h-auto rounded-[3rem] transition-all duration-1000 ease-in-out hover:animate-pulse hover:scale-110  hover:rounded-[2rem] hover:shadow-2xl
                            '
               />
             </Link>
