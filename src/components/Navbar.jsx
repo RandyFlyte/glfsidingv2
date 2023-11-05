@@ -33,7 +33,7 @@ const Navbar = () => {
               className='border-slate-800 transition-all duration-1000 ease-in-out hover:px-2 hover:scale-110 m-1 hover:m-2'>
               {/* GLF Logo */}
               <Image
-                src='/assets/services/glfLogo.png'
+                src='/assets/services/GLFLogo.png'
                 alt='GLF Siding Logo'
                 width='110'
                 height='110'
