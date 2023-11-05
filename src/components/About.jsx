@@ -6,12 +6,49 @@ import ImageCarousel from './ImageCarousel';
 
 const About = () => {
   return (
-    <section
-      id='about'
-      className='w-full p-2 flex items-center pb-2 mt-36
-            '>
+    <section id='about' className='w-full p-2 flex items-center pb-2 mt-36'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-        <div className='col-span-2 '>
+        <div className='flex justify-between'>
+          <span className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-16'>
+            About Us
+          </span>
+
+          {/* <div class='widget' id='tt-review-widget-star'>
+            <img
+              src='https://cdn.thumbtackstatic.com/fe-assets-web/media/logos/thumbtack/wordmark.svg'
+              alt='Thumbtack'
+              class='tt-logo'
+            />
+            <a
+              target='_blank'
+              href='https://www.thumbtack.com/nj/hopatcong/vinyl-siding-repair/glf-siding-garage-doors/service/234261171779593399'>
+              <div>GLF Siding and Garage Doors</div>
+              <script src='https://www.thumbtack.com/profile/widgets/scripts/?service_pk=234261171779593399&widget_id=review&type=star'></script>
+            </a>
+            <div id='tt-dynamic'>
+              <img src='https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg' />
+              <img src='https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg' />
+              <img src='https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg' />
+              <img src='https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg' />
+              <img src='https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg' />
+              <span>9 reviews</span>
+            </div>
+          </div>
+
+          <a
+            className='widget'
+            href='https://www.thumbtack.com/nj/hopatcong/vinyl-siding-repair/glf-siding-garage-doors/service/234261171779593399'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <img
+              style={{ height: '128px', width: '128px' }}
+              alt='Thumbtack Widget'
+              src='https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/pro-svg/white/2022.svg'
+            />
+            <script src='https://www.thumbtack.com/profile/widgets/scripts/?service_pk=234261171779593399&widget_id=profile'></script>
+          </a> */}
+        </div>
+        <div className='col-span-2'>
           <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-8'>
             About Us
           </p>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://www.glfsiding.com/</loc>
+   </url>
+   <url>
+      <loc>https://www.glfsiding.com/#about</loc>
+   </url>
+   <url>
+      <loc>https://www.glfsiding.com/#Services</loc>
+   </url>
+   <url>
+      <loc>https://www.glfsiding.com/#contact</loc>
+   </url>
+   <url>
+      <loc>https://www.glfsiding.com/#reviews</loc>
+   </url>
+   <url>
+      <loc>https://www.glfsiding.com/#projects</loc>
+   </url>
+   <url>
+      <loc>https://www.glfsiding.com/projects</loc>
+   </url>
+   <url>
+      <loc>https://www.glfsiding.com/api/sendMail</loc>
+   </url>
+</urlset>
