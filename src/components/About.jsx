@@ -6,12 +6,12 @@ import ImageCarousel from './ImageCarousel';
 
 const About = () => {
   return (
-    <section id='about' className='w-full p-2 flex items-center pb-2 mt-36'>
-      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+    <section
+      id='about'
+      className='target:outline-dashed w-full p-2 flex items-center pb-2 mt-36'>
+      <div className='max-w-[1240px] m-auto  grid-cols-3 gap-8'>
         <div className='flex justify-between'>
-          <span className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-16'>
-            About Us
-          </span>
+          <span className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-16'></span>
 
           {/* <div class='widget' id='tt-review-widget-star'>
             <img
@@ -34,7 +34,7 @@ const About = () => {
               <span>9 reviews</span>
             </div>
           </div>
-
+*/}
           <a
             className='widget'
             href='https://www.thumbtack.com/nj/hopatcong/vinyl-siding-repair/glf-siding-garage-doors/service/234261171779593399'
@@ -46,7 +46,7 @@ const About = () => {
               src='https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/pro-svg/white/2022.svg'
             />
             <script src='https://www.thumbtack.com/profile/widgets/scripts/?service_pk=234261171779593399&widget_id=profile'></script>
-          </a> */}
+          </a>
         </div>
         <div className='col-span-2'>
           <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-8'>

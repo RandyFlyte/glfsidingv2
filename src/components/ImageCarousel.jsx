@@ -6,20 +6,20 @@ import { RxDotFilled } from 'react-icons/rx';
 export default function ImageCarousel() {
   const slides = [
     {
-      url: '/assets/NavBackground.png',
+      url: '/assets/services/RedGarageAfter.png',
     },
     {
-      url: '/assets/about.png',
+      url: '/assets/services/GarageDoor1.png',
     },
     {
-      url: '/assets/glfLogo.png',
+      url: '/assets/services/Window.png',
     },
 
     {
-      url: '/assets/NavBackground.png',
+      url: '/assets/services/NiceEntryWay.png',
     },
     {
-      url: '/assets/NavBackground.png',
+      url: '/assets/services/RedGarageAfter.png',
     },
   ];
 

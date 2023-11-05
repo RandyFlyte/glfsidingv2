@@ -5,8 +5,9 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'GLF Siding',
-  description: 'Family owned and operated, installs windows and doors',
+  title: 'GLF Siding and Garage Doors',
+  description:
+    'Family owned and operated, installs garage doors and siding repairs',
 };
 
 export default function RootLayout({ children }) {

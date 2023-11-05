@@ -17,28 +17,33 @@ const Navbar = () => {
   return (
     <nav
       id='Navbar-Root'
-      className='relative  w-full h-auto shadow-xl z-[90] bg-[url("/assets/NavBackground.png")]
-        bg-center'>
+      className='relative w-full h-auto shadow-xl z-[90] bg-[url("/assets/services/NiceGarageWhite.png")]
+        bg-cover'>
       <div
         id='Navbar-2nd-Deep'
-        className='relative flex justify-evenly pb-0 pt-2 md:items-center w-full h-full px-0 2xl:pr-16 flex-row'>
+        className='relative flex justify-between pb-0 md:items-center w-full h-full px-0 2xl:pr-16 flex-row'>
         <section
           id='Navbar-Logo-and-Contact-Link'
-          className='md:flex md:grow md:w-auto'>
+          className='md:flex md:grow md:w-auto hover:scale-110 bg-slate-800'>
           <div
             id='Logo-Contact'
-            className='flex flex-col self-center items-center'>
-            <Link href='/' className=''>
+            className='hover:translate-x-4 hover:translate-y-2 bg-slate-800 outline-dashed outline-4 outline-amber-900 outline-slate-850 flex flex-col self-center transition-all duration-1000 ease-in-out hover:shadow-5xl hover:rounded-2xl hover:mt-2 hover:ml-2 items-center'>
+            <Link
+              href='/'
+              className='border-slate-800 transition-all duration-1000 ease-in-out hover:px-2 hover:scale-110 m-1 hover:m-2'>
+              {/* GLF Logo */}
               <Image
-                src='/assets/glfLogo.png'
+                src='/assets/services/glfLogo.png'
                 alt='GLF Siding Logo'
-                width='151'
-                height='63'
-                className='pt-0 self-center'
+                width='110'
+                height='110'
+                className='h-auto rounded-[3rem] transition-all duration-1000 ease-in-out hover:scale-110  hover:rounded-[2rem] hover:shadow-2xl
+                           '
               />
             </Link>
+
             <Link className='flex self-center' href='/#contact'>
-              <span className='text-slate-200 bg-sky-950 rounded-xl ml-1 text-sm md:text-base underline hover:text-lg self-center p-1 mb-1'>
+              <span className='text-slate-200 p-1 pt-0 bg-slate-900 rounded-xl ml-1 mb-1 text-sm md:text-base hover:text-lg self-center pb-0'>
                 Contact
               </span>
             </Link>
@@ -54,7 +59,7 @@ const Navbar = () => {
             className='flex flex-col flex-end gap-2 pr-12 md:pr-5 basis-1 pt-8'>
             <section
               id='Navbar-Links--About-Us-and-Reviews'
-              className='self-center'>
+              className='self-center flex'>
               <Link
                 href='/#about'
                 className='visible md:hidden self-center p-1 text-slate-200 bg-sky-950 rounded-lg'>
@@ -68,7 +73,7 @@ const Navbar = () => {
             </section>
             <section
               id='Navbar-Links--Services-and-Projects'
-              className='self-center'>
+              className='self-center flex mt-4'>
               <Link
                 href='/#Services'
                 className='visible md:hidden p-1 self-center text-slate-200 bg-sky-950 rounded-lg'>
@@ -80,13 +85,6 @@ const Navbar = () => {
                 Projects
               </Link>
             </section>
-          </div>
-          <div className='flex flex-col md:flex-row'>
-            {/* Main Title */}
-            <h1
-              id='Main-Title'
-              className='relative self-end lg:fixed pr-7 text-center text-slate-700 text-2xl'
-              style={{ marginTop: '0px' }}></h1>
           </div>
 
           {/* Navbar Links - Medium-size+ */}
@@ -137,7 +135,7 @@ const Navbar = () => {
           <div
             id='Hamburger-Menu'
             onClick={handleNav}
-            className='fixed md:hidden w-12 self-end cursor-pointer ml-24 pt-0 mr-2 bg-slate-500/50
+            className='fixed md:hidden w-auto h-auto self-end cursor-pointer mt-1 mr-1 bg-orange-700/80
                         rounded-lg'>
             <AiOutlineMenu size={45} aria-label='Sidebar menu' />
           </div>
@@ -148,32 +146,30 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         id='Mobile-Menu-Overlay'
-        className={
-          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/80' : ''
-        }>
+        className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen' : ''}>
         {/* Side Drawer Menu */}
         <div
           id='Side-Drawer-Menu'
           className={
             nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-2 ease-in duration-500'
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#5c6d7a] ease-in duration-500'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }>
           <div>
-            <div className='flex w-full items-center justify-between pl-1 pr-2'>
+            <div className='flex w-full items-center justify-between bg-slate-800'>
               <Link onClick={handleNav} href='/'>
                 <Image
-                  src='/assets/glfLogo.png'
-                  width='87'
-                  height='35'
+                  src='/assets/services/glfLogo.png'
+                  width='90'
+                  height='90'
                   alt='/'
-                  className='pl-1'
+                  className='transition ease-in-out duration-300 hover:scale-110'
                 />
               </Link>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 cursor-pointer'>
-                <AiOutlineClose fill='black' size={25} />
+                className='rounded-full shadow-lg shadow-slate-950 cursor-pointer mr-3 mb-9 outline-dotted outline-3 outline-stone-900'>
+                <AiOutlineClose fill='darkorange' size={35} />
               </div>
             </div>
             <div className='border-b border-gray-300 my-2'>
@@ -186,7 +182,7 @@ const Navbar = () => {
           </div>
 
           {/* Sidebar Nav Links List */}
-          <div className='py-2 flex flex-col bg-slate-300'>
+          <div className='py-2 flex flex-col ml-2 pl-2 bg-slate-300'>
             <ul className='uppercase'>
               <Link onClick={handleNav} href='/'>
                 <li className='py-4 text-base hover:text-lg'>Home</li>

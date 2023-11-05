@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main
       id='Home-Main'
-      className='relative flex min-h-screen flex-col items-center justify-between bg-slate-100 dark:bg-black bg-gradient-to-br from-slate-400 to-white
+      className='relative flex min-h-screen flex-col items-center justify-between bg-navyblue1-200 dark:bg-black bg-gradient-to-br from-blue-300 to-amber-300
       '>
       <Navbar />
       <Main />
@@ -26,6 +26,6 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: 'GLF Siding',
-  description: 'GLF Siding Install Siding and Windows',
+  title: 'GLF Siding and Garage Doors',
+  description: 'GLF Siding and Garage Doors',
 };

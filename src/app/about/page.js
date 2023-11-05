@@ -10,7 +10,7 @@ export default function About() {
 }
 
 export const metadata = {
-    title: "GLF Siding",
+    title: "GLF Siding and Garage Doors",
     description:
         "We are a family-owned company specializing in the installation of door and windows.",
 };

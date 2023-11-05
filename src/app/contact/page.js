@@ -12,6 +12,6 @@ export default function ContactPage() {
 }
 
 export const metadata = {
-    title: "Contact GLF Siding",
-    description: "Contact GLF Siding by phone or e-mail",
+    title: "Contact GLF Siding and Garage Doors",
+    description: "Contact GLF Siding and Garage Doors by phone or e-mail",
 };
