@@ -18,7 +18,7 @@ module.exports = {
         'navyblue1': {
           200: '#112B3C',
         },
-        'custom-color': {
+        'custom-colour': {
           200: '#abcdef',
         },
       },
