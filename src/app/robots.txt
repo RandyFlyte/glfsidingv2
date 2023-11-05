@@ -1,4 +1,4 @@
-User-agent: *
+User-Agent: *
+Allow: /
 Disallow: /private/
-Allow: /public/
-Sitemap: http://www.yoursite.com/sitemap.xml
+Sitemap: https://www.glfsiding.com/sitemap.xml
