@@ -31,7 +31,7 @@ const Navbar = () => {
             <Link
               href='/'
               className='border-slate-800 transition-all duration-1000 ease-in-out hover:px-2 hover:scale-110 m-1 hover:m-2'>
-              {/* GLF Logo */}
+              {/* GLF Log */}
               <Image
                 src='/assets/services/GLFLogo.png'
                 alt='GLF Siding Logo'

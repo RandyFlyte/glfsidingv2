@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Reviews = () => {
   return (
-    <div id='reviews' className='w-full scroll-snap-start'>
+    <div id='reviews' className='w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
         <h2 className='text-2xl inline-flex tracking-widest uppercase p-2 text-[#1e1c58]'>
           Reviews
@@ -13,7 +13,7 @@ const Reviews = () => {
         <p>Our Google reviews! Click a review to view on Google</p>
         <FiveStars />
         <span className='underline'>8 reviews</span>
-        <div className='p-1 mt-4 mb-0'>
+        <div id='ReviewCardsDiv' className='p-1 mt-4 mb-0 w-auto'>
           <Link href='https://g.co/kgs/StM7Y7'>
             <ReviewCard
               custName='Katie Guidi'
