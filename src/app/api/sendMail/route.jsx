@@ -7,7 +7,7 @@ export async function POST(req, res) {
     const name = formData.get('customer-name');
     const email = formData.get('email');
     const message = formData.get('message');
-
+    console.log(name);
     await sendMail(name, email, message);
     console.log('Sent mail');
   } catch (err) {
