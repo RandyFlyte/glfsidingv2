@@ -11,14 +11,12 @@ const About = () => {
           </p>
           <p className='py-2 text-gray-800'>
             We at GLF Siding are a proud family-owned business boasting 42 years
-            of dedicated service to Northern New Jersey. While we have pivoted
-            to specializing in garage door installations over the past several
-            years, we continue to offer our expertise in siding repairs, window
-            replacements, and entry doors. At GLF Siding, our hallmarks are
-            meticulous attention to detail, a clean work site, utmost
-            professionalism, and an unwavering commitment to customer
-            satisfaction. We invite you to reach out with any inquiries or to
-            request a complimentary estimate.
+            of dedicated service to Northern New Jersey. Our expertise includes
+            siding, window replacements, siding repairs, entry doors, and garage
+            doors. At GLF Siding, our hallmarks are meticulous attention to
+            detail, a clean work site, utmost professionalism, and an unwavering
+            commitment to customer satisfaction. We invite you to reach out with
+            any inquiries or to request a complimentary estimate.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
