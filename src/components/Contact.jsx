@@ -7,6 +7,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../../public/assets/contact.jpg';
+import EmailService from '@/util/emailJSservice';
 
 const Contact = () => {
   return (
@@ -15,6 +16,7 @@ const Contact = () => {
         <h2 className='text-2xl tracking-widest uppercase text-[#1e1c58] pl-4'>
           Contact GLF Siding
         </h2>
+        <EmailService />
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* Contact top */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 hidden md:visible'>
