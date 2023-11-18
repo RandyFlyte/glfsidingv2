@@ -25,7 +25,7 @@ export async function sendMail(name, toEmail, otpText) {
     if (error) {
       throw new Error(error);
     } else {
-      console.log('Email Sent');
+      console.log('Email Sent!');
       return true;
     }
   });
