@@ -1,8 +1,8 @@
-import GarageDoorService from '../../public/assets/services/GarageDoorService.png';
-import netflixImg from '../../public/assets/projects/netflix.jpg';
-import twitchImg from '../../public/assets/projects/twitch.jpg';
-import garage_door_service from '../../public/assets/services/garage_door_service.png';
+import GarageDoorService from '../../public/assets/workPictures/GarageDoorService.png';
+import GarageDoor1 from '../../public/assets/workPictures/GarageDoor1.png';
+import garage_door_service from '../../public/assets/workPictures/garage_door_service.png';
 import ProjectItem from './ProjectItem';
+import Image from 'next/image';
 
 const Services = () => {
   return (
@@ -11,7 +11,7 @@ const Services = () => {
       className='text-3lg w-full lg:h-screen p-0 pt-24 lg:pt-0'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <h2 className='text-2xl tracking-widest text-[#252979] self-center'>
-          Services GLF Siding Provides
+          Services We Provide
         </h2>
 
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
@@ -33,6 +33,12 @@ const Services = () => {
               height='125px'
               alt='/'
             /> */}
+            <Image
+              src={GarageDoor1}
+              width={500}
+              height={500}
+              alt='Garage door'
+            />
             <div className='text-center justify-center items-center'>
               <h3 className=' flex-shrink-0'>Garage Doors</h3>
             </div>

@@ -10,10 +10,9 @@ const About = () => {
             About Us
           </p>
           <p className='py-2 text-gray-800'>
-            We at GLF Siding are a proud family-owned business boasting 42 years
-            of dedicated service to Northern New Jersey. Our expertise includes
-            siding, window replacements, siding repairs, entry doors, and garage
-            doors. At GLF Siding, our hallmarks are meticulous attention to
+            Specializing in siding, window replacements, siding repairs, entry doors, and garage
+            doors, we at GLF Siding are a proud family-owned business boasting 42 years
+            of dedicated service to Northern New Jersey. At GLF Siding, our hallmarks are meticulous attention to
             detail, a clean work site, utmost professionalism, and an unwavering
             commitment to customer satisfaction. We invite you to reach out with
             any inquiries or to request a complimentary estimate.
