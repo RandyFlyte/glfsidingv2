@@ -6,6 +6,7 @@ export async function sendMail(name, toEmail, otpText) {
 
   var transporter = nodemailer.createTransport({
     service: 'gmail',
+    port: 465, // Secure SMTP port
     auth: {
       user: nodeMail,
       pass: nodeMailPw,
