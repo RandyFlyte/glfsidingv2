@@ -73,7 +73,7 @@ const Contact = () => {
                         name='custname'
                       />
                     </div>
-                    {/* <div className='flex flex-col'>
+                    <div className='flex flex-col'>
                       <label htmlFor='phone' className='uppercase text-sm py-2'>
                         Phone Number
                       </label>
@@ -83,7 +83,7 @@ const Contact = () => {
                         name='phone'
                       />
                     </div>
-                  </div> */}
+                  </div>
                     <div className='flex flex-col py-2'>
                       <label htmlFor='email' className='uppercase text-sm py-2'>
                         E-mail
@@ -120,7 +120,6 @@ const Contact = () => {
                       className='w-full p-4 text-gray-300 mt-4 bg-slate-600'>
                       Send Message
                     </button>
-                  </div>
                 </fieldset>
               </form>
             </div>

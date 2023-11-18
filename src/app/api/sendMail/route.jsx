@@ -8,8 +8,9 @@ export async function POST(req, res) {
     const name = formData.get('custname');
     const email = formData.get('email');
     const message = formData.get('message');
+    const phone = formData.get('phone');
     console.log(name);
-    const success = await sendMail(name, email, message);
+    await sendMail(name, email, message, phone);
     console.log('Sent mail');
   } catch (err) {
     console.log('POST error', err);
