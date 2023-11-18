@@ -62,16 +62,18 @@ const Contact = () => {
                   <legend>Contact GLF Siding</legend>
                   <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                     <div className='flex flex-col'>
-                      <label htmlFor='name' className='uppercase text-sm py-2'>
+                      <label
+                        htmlFor='custname'
+                        className='uppercase text-sm py-2'>
                         Name
                       </label>
                       <input
                         className='border-2 rounded-lg p-3 flex border-gray-300'
                         type='text'
-                        name='customer-name'
+                        name='custname'
                       />
                     </div>
-                    <div className='flex flex-col'>
+                    {/* <div className='flex flex-col'>
                       <label htmlFor='phone' className='uppercase text-sm py-2'>
                         Phone Number
                       </label>
@@ -81,18 +83,18 @@ const Contact = () => {
                         name='phone'
                       />
                     </div>
-                  </div>
-                  <div className='flex flex-col py-2'>
-                    <label htmlFor='email' className='uppercase text-sm py-2'>
-                      E-mail
-                    </label>
-                    <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
-                      type='email'
-                      name='email'
-                    />
-                  </div>
-                  <div className='flex flex-col py-2'>
+                  </div> */}
+                    <div className='flex flex-col py-2'>
+                      <label htmlFor='email' className='uppercase text-sm py-2'>
+                        E-mail
+                      </label>
+                      <input
+                        className='border-2 rounded-lg p-3 flex border-gray-300'
+                        type='email'
+                        name='email'
+                      />
+                    </div>
+                    {/* <div className='flex flex-col py-2'>
                     <label htmlFor='subject' className='uppercase text-sm py-2'>
                       Subject
                     </label>
@@ -101,21 +103,24 @@ const Contact = () => {
                       type='text'
                       name='subject'
                     />
+                  </div> */}
+                    <div className='flex flex-col py-2'>
+                      <label
+                        htmlFor='message'
+                        className='uppercase text-sm py-2'>
+                        Message
+                      </label>
+                      <textarea
+                        className='border-2 rounded-lg p-3 border-gray-300'
+                        rows='10'
+                        name='message'></textarea>
+                    </div>
+                    <button
+                      type='submit'
+                      className='w-full p-4 text-gray-300 mt-4 bg-slate-600'>
+                      Send Message
+                    </button>
                   </div>
-                  <div className='flex flex-col py-2'>
-                    <label htmlFor='message' className='uppercase text-sm py-2'>
-                      Message
-                    </label>
-                    <textarea
-                      className='border-2 rounded-lg p-3 border-gray-300'
-                      rows='10'
-                      name='message'></textarea>
-                  </div>
-                  <button
-                    type='submit'
-                    className='w-full p-4 text-gray-300 mt-4 bg-slate-600'>
-                    Send Message
-                  </button>
                 </fieldset>
               </form>
             </div>
