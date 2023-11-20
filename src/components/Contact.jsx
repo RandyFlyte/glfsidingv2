@@ -7,7 +7,6 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../../public/assets/contact.jpg';
-import EmailService from '@/util/emailJSservice';
 
 const Contact = () => {
   return (
@@ -16,7 +15,6 @@ const Contact = () => {
         <h2 className='text-2xl tracking-widest uppercase text-[#1e1c58] pl-4'>
           Contact GLF Siding
         </h2>
-        <EmailService />
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* Contact top */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 hidden md:visible'>
@@ -84,17 +82,17 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                    <div className='flex flex-col py-2'>
-                      <label htmlFor='email' className='uppercase text-sm py-2'>
-                        E-mail
-                      </label>
-                      <input
-                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                        type='email'
-                        name='email'
-                      />
-                    </div>
-                    {/* <div className='flex flex-col py-2'>
+                  <div className='flex flex-col py-2'>
+                    <label htmlFor='email' className='uppercase text-sm py-2'>
+                      E-mail
+                    </label>
+                    <input
+                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      type='email'
+                      name='email'
+                    />
+                  </div>
+                  {/* <div className='flex flex-col py-2'>
                     <label htmlFor='subject' className='uppercase text-sm py-2'>
                       Subject
                     </label>
@@ -104,22 +102,20 @@ const Contact = () => {
                       name='subject'
                     />
                   </div> */}
-                    <div className='flex flex-col py-2'>
-                      <label
-                        htmlFor='message'
-                        className='uppercase text-sm py-2'>
-                        Message
-                      </label>
-                      <textarea
-                        className='border-2 rounded-lg p-3 border-gray-300'
-                        rows='10'
-                        name='message'></textarea>
-                    </div>
-                    <button
-                      type='submit'
-                      className='w-full p-4 text-gray-300 mt-4 bg-slate-600'>
-                      Send Message
-                    </button>
+                  <div className='flex flex-col py-2'>
+                    <label htmlFor='message' className='uppercase text-sm py-2'>
+                      Message
+                    </label>
+                    <textarea
+                      className='border-2 rounded-lg p-3 border-gray-300'
+                      rows='10'
+                      name='message'></textarea>
+                  </div>
+                  <button
+                    type='submit'
+                    className='w-full p-4 text-gray-300 mt-4 bg-slate-600'>
+                    Send Message
+                  </button>
                 </fieldset>
               </form>
             </div>

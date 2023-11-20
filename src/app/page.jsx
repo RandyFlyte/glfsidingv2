@@ -17,8 +17,8 @@ export default function Home() {
       <Main />
       {/* <ImageCarousel /> */}
       <About />
-      <Skills />
-      <ProjectsPage />
+      {/* <Skills /> */}
+      {/* <ProjectsPage /> */}
       <Reviews />
       <ContactPage />
     </main>

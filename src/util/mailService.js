@@ -12,7 +12,6 @@ const sendMail = async (custname, email, message, phone) => {
   });
 
   await new Promise((resolve, reject) => {
-    // verify connection configuration
     transporter.verify(function (error, success) {
       if (error) {
         console.log(error);
@@ -24,29 +23,19 @@ const sendMail = async (custname, email, message, phone) => {
     });
   });
 
-  var mailOptions = {
-    from: email,
-    to: process.env.NODEMAILER_EMAIL,
-    text: message,
-    phone: phone,
-    replyTo: email,
-    subject: message,
+  const mailOptions = {
+    from: `"${custname}" <${process.env.NODEMAILER_EMAIL}>`, // Display sender's name
+    to: process.env.NODEMAILER_EMAIL, // Recipient email address
+    subject: `New Message From ${custname}`, // Email subject
+    text: `Name: ${custname}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`, // Plain text body
+    html: `<p><strong>Name:</strong> ${custname}</p>
+         <p><strong>Phone:</strong> ${phone}</p>
+         <p><strong>Email:</strong> ${email}</p>
+         <p><strong>Message:</strong> ${message}</p>`, // HTML body
+    replyTo: email, // Reply-To email address
   };
 
-  // const mailData = {
-  //   from: {
-  //     name: `${custname}`,
-  //     address: process.env.NODEMAILER_EMAIL,
-  //   },
-  //   replyTo: email,
-  //   to: process.env.NODEMAILER_EMAIL,
-  //   subject: `form message`,
-  //   text: message,
-  //   html: `${message}`,
-  // };
-
   await new Promise((resolve, reject) => {
-    // send mail
     transporter.sendMail(mailOptions, (err, info) => {
       if (err) {
         console.error(err);
@@ -59,36 +48,3 @@ const sendMail = async (custname, email, message, phone) => {
   });
 };
 module.exports = { sendMail };
-
-// var nodemailer = require('nodemailer');
-// //-----------------------------------------------------------------------------
-// export async function sendMail(name, toEmail, otpText) {
-//   const nodeMail = process.env.NODEMAILER_EMAIL;
-//   const nodeMailPw = process.env.NODEMAILER_PW;
-
-//   var transporter = await nodemailer.createTransport({
-//     host: 'smtp.gmail.com',
-//     port: 465, // Secure SMTP port
-//     auth: {
-//       user: nodeMail,
-//       pass: nodeMailPw,
-//     },
-//     secure: true,
-//   });
-
-//   var mailOptions = {
-//     from: name,
-//     to: nodeMail,
-//     subject: toEmail,
-//     text: otpText,
-//   };
-
-//   await transporter.sendMail(mailOptions, function (error, info) {
-//     if (error) {
-//       throw new Error(error);
-//     } else {
-//       console.log('Email Sent!');
-//       return true;
-//     }
-//   });
-// }

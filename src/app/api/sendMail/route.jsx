@@ -14,10 +14,6 @@ export async function POST(req, res) {
     console.log('Sent mail');
   } catch (err) {
     console.log('POST error', err);
-    // res.status(400).json({
-    //   error_code: 'api_one',
-    //   message: err.message,
-    // });
   }
   return NextResponse.json(res);
 }

@@ -3,16 +3,19 @@ import ImageCarousel from './ImageCarousel';
 
 const About = () => {
   return (
-    <section id='about' className='w-full p-2 flex items-center pb-2 mt-36'>
+    <section
+      id='about'
+      className='w-full p-2 flex items-center pb-2 mt-48 md:mt-36'>
       <div className='max-w-[1240px] m-auto  grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-2xl tracking-widest text-[#1e1c58] pl-4 pt-8'>
             About Us
           </p>
           <p className='py-2 text-gray-800'>
-            Specializing in siding, window replacements, siding repairs, entry doors, and garage
-            doors, we at GLF Siding are a proud family-owned business boasting 42 years
-            of dedicated service to Northern New Jersey. At GLF Siding, our hallmarks are meticulous attention to
+            Specializing in siding, window replacements, siding repairs, entry
+            doors, and garage doors, we at GLF Siding are a proud family-owned
+            business boasting 42 years of dedicated service to Northern New
+            Jersey. At GLF Siding, our hallmarks are meticulous attention to
             detail, a clean work site, utmost professionalism, and an unwavering
             commitment to customer satisfaction. We invite you to reach out with
             any inquiries or to request a complimentary estimate.

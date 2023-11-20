@@ -8,12 +8,13 @@ const Main = () => {
         <h2
           id='Banner-Top'
           className='uppercase text-base tracking-widest text-gray-200 bg-slate-800 lg:text-lg'>
-          Garage Door Installations and Repairs, Siding Repairs, and Windows!
+          Window Replacement, Garage Doors, Siding Repairs, and Entry Doors!
         </h2>
-        <div className='flex justify-between p-1 text-blue-950 hover:text-stone-700 text-lg lg:text-xl'>
+        <div className='flex flex-col md:flex-row justify-start p-1 text-blue-950 hover:text-stone-700 text-lg lg:text-xl'>
           <a href='tel:+18622594566' className='mr-1 rounded-lg underline'>
             (862)259-4566
           </a>
+          <span className='no-underline'>Call or e-mail us!</span>
           <a
             href='mailto:GLFsiding@gmail.com'
             className='px-1 rounded-lg underline'>
@@ -21,8 +22,8 @@ const Main = () => {
           </a>
         </div>
         <Link href='/#contact'>
-          <h3 className='text-gray-100 animate-pulse bg-slate-600 underline p-2 lg:text-xl'>
-            * Contact us for a FREE estimate now! *
+          <h3 className='text-orange-200 animate-pulse bg-slate-600 underline p-2 lg:text-xl'>
+            ** Contact us for a FREE estimate now! **
           </h3>
         </Link>
       </div>
